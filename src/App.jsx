@@ -7,20 +7,20 @@ import Error404 from "./components/pages/Error404";
 import Login from "./components/pages/Login";
 import ProtectorAdmin from "./components/routes/ProtectorAdmin";
 import Home from "./components/pages/Home";
-import FormularioJuego from "./components/pages/Juegos/FormularioJuego";
+import FormJuegos from "./components/pages/juegos/FormJuegos";
 import Administrador from "./components/pages/Administrador";
-import Shooter from "./components/pages/Categorias/Shooter";
-import Simulacion from "./components/pages/Categorias/Simulacion";
-import Aventura from "./components/pages/Categorias/Aventura";
-import Sandbox from "./components/pages/Categorias/Sandbox";
-import Rpg from "./components/pages/Categorias/Rpg";
+import Shooter from "./components/pages/categorias/Shooter";
+import Simulacion from "./components/pages/categorias/Simulacion";
+import Aventura from "./components/pages/categorias/Aventura";
+import Sandbox from "./components/pages/categorias/Sandbox";
+import Rpg from "./components/pages/categorias/Rpg";
 import { useEffect, useState } from "react";
-import DetalleProducto from "./components/pages/DetalleProducto";
-import PreguntasFrecuentes from "./components/pages/PreguntasFrecuentes";
-import SobreNosotros from "./components/pages/SobreNosotros";
+import DetalleProducto from "./components/pages/DetailProduct";
+import PreguntasFrecuentes from "./components/pages/Answers";
+import SobreNosotros from "./components/pages/About";
 import { v4 as uuidv4 } from "uuid";
-import BotonComprar from "./components/pages/BotonComprar";
-import Registro from "./components/pages/Registro";
+import BotonComprar from "./components/pages/ButtonBuy";
+import Registro from "./components/pages/Register";
 
 function App() {
   const usuarioLogueado = JSON.parse(localStorage.getItem("userKeyJuego")) || false;
@@ -130,7 +130,7 @@ function App() {
               ></Route>
               <Route
                 path="crear"
-                element={<FormularioJuego titulo={"Crear juegos"} crearJuego={crearJuego}></FormularioJuego>}
+                element={<FormJuegos titulo={"Crear juegos"} crearJuego={crearJuego}></FormJuegos>}
               ></Route>
               <Route
                 path="editar/:id"

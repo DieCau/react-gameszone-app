@@ -2,7 +2,7 @@ import Banner from "../../assets/Banner/games.png";
 import img1 from "../../assets/Banner/image1.jpeg";
 import img2 from "../../assets/Banner/topjuegos.jpg";
 import { Container, Row, Carousel } from "react-bootstrap";
-import CardJuegos from "./Juegos/CardJuegos";
+import CardJuegos from "./juegos/CardJuegos";
 const Home = ({ juegos }) => {
 
   const categorias = ["Shooter", "RPG", "SandBox", "Aventura", "Simulacion"];

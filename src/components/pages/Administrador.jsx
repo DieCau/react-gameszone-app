@@ -1,10 +1,10 @@
 import { Table, Container, Button, Form, Row, Col } from "react-bootstrap";
-import ItemJuegos from "./Juegos/ItemJuegos";
+import ItemJuegos from "./juegos/ItemJuegos";
 import { Link } from "react-router";
-import { juegosPrueba } from "../../data/juegosPrueba";
+import { juegosTest } from "../../data/juegosTest";
 const Administrador = ({ setJuegos, borrarJuego, busqueda, handleChange, juegosFiltados }) => {
   const cargarJuegos = () => {
-    setJuegos(juegosPrueba);
+    setJuegos(juegosTest);
   };
   return (
     <>
