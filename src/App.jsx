@@ -6,7 +6,7 @@ import Header from "./components/shared/Header";
 import Error404 from "./components/pages/Error404";
 import Login from "./components/pages/Login";
 import ProtectorAdmin from "./components/routes/ProtectorAdmin";
-import Inicio from "./components/pages/Inicio";
+import Home from "./components/pages/Home";
 import FormularioJuego from "./components/pages/Juegos/FormularioJuego";
 import Administrador from "./components/pages/Administrador";
 import Shooter from "./components/pages/Categorias/Shooter";
@@ -97,7 +97,7 @@ function App() {
         ></Header>
         <main>
           <Routes>
-            <Route path="/" element={<Inicio juegos={juegos}></Inicio>}></Route>
+            <Route path="/" element={<Home juegos={juegos}></Home>}></Route>
             <Route path="/detalle/:id" element={<DetalleProducto buscarJuego={buscarJuego}></DetalleProducto>}></Route>
             <Route
               path="/login"
