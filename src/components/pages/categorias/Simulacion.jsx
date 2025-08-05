@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import citiesSkyLines from "../../img/imgCarouselSimulacion/citiesSkyLines.jpg";
-import farmingSimulator22 from "../../img/imgCarouselSimulacion/farmingSimulator22.jpg";
-import planetZoo from "../../img/imgCarouselSimulacion/planetZoo.jpg";
-import CardJuegos from "../Juegos/CardJuegos";
+import citiesSkyLines from "../../../assets/img/imgCarouselSimulacion/citiesSkyLines.jpg";
+import farmingSimulator22 from "../../../assets/img/imgCarouselSimulacion/farmingSimulator22.jpg";
+import planetZoo from "../../../assets/img/imgCarouselSimulacion/planetZoo.jpg";
+import CardJuegos from "../juegos/CardJuegos";
 import { Row } from "react-bootstrap";
 
 const Simulacion = ({ juegos }) => {

@@ -1,9 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
-import witcher from "../../img/imgCarouselRpg/witcher.webp";
-import eldenRIng from "../../img/imgCarouselRpg/eldenRIng.jpg";
-import divinity2 from "../../img/imgCarouselRpg/divinity2.jpg";
+import witcher from "../../../assets/img/imgCarouselRpg/witcher.webp";
+import eldenRIng from "../../../assets/img/imgCarouselRpg/eldenRIng.jpg";
+import divinity2 from "../../../assets/img/imgCarouselRpg/divinity2.jpg";
 import { Row } from "react-bootstrap";
-import CardJuegos from "../Juegos/CardJuegos";
+import CardJuegos from "../juegos/CardJuegos";
 
 const Rpg = ({ juegos }) => {
   const juegosRPG = juegos.filter((juego) => juego.categoria === "RPG");

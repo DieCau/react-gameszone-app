@@ -1,15 +1,15 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import htmlologo from "../img/imgSobreNosotros/html.png";
-import csslogo from "../img/imgSobreNosotros/css.png";
-import javascriptlogo from "../img/imgSobreNosotros/javascript.png";
-import reactlogo from "../img/imgSobreNosotros/react.png";
-import bootstraplogo from "../img/imgSobreNosotros/bootstrap.png";
-import avatar1 from "../img/imgSobreNosotros/avatar1.png";
-import avatar2 from "../img/imgSobreNosotros/avatar2.png";
-import avatar3 from "../img/imgSobreNosotros/avatar3.png";
-import avatar4 from "../img/imgSobreNosotros/avatar4.png";
-import avatar5 from "../img/imgSobreNosotros/avatar5.png";
+import htmlologo from "../../assets/img/imgSobreNosotros/html.png";
+import csslogo from "../../assets/img/imgSobreNosotros/css.png";
+import javascriptlogo from "../../assets/img/imgSobreNosotros/javascript.png";
+import reactlogo from "../../assets/img/imgSobreNosotros/react.png";
+import bootstraplogo from "../../assets/img/imgSobreNosotros/bootstrap.png";
+import avatar1 from "../../assets/img/imgSobreNosotros/avatar1.png";
+import avatar2 from "../../assets/img/imgSobreNosotros/avatar2.png";
+import avatar3 from "../../assets/img/imgSobreNosotros/avatar3.png";
+import avatar4 from "../../assets/img/imgSobreNosotros/avatar4.png";
+import avatar5 from "../../assets/img/imgSobreNosotros/avatar5.png";
 
 const About = () => {
   return (

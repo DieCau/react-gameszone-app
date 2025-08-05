@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import cs2 from "../../img/imgCarouselShooter/cs2.jpg";
-import battlefield1 from "../../img/imgCarouselShooter/battlefield1.webp";
-import blackOps2 from "../../img/imgCarouselShooter/blackOps2.jpg";
-import CardJuegos from "../Juegos/CardJuegos";
+import cs2 from "../../../assets/img/imgCarouselShooter/cs2.jpg";
+import battlefield1 from "../../../assets/img/imgCarouselShooter/battlefield1.webp";
+import blackOps2 from "../../../assets/img/imgCarouselShooter/blackOps2.jpg";
+import CardJuegos from "../juegos/CardJuegos";
 import { Row } from "react-bootstrap";
 
 const Shooter = ({ juegos }) => {

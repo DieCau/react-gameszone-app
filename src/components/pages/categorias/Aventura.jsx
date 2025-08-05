@@ -1,9 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
-import zelda from "../../img/imgCarouselAventura/zelda.jpg";
-import uncharted4 from "../../img/imgCarouselAventura/uncharted4.webp";
-import redemption2 from "../../img/imgCarouselAventura/redemption2.jpg";
+import zelda from "../../../assets/img/imgCarouselAventura/zelda.jpg";
+import uncharted4 from "../../../assets/img/imgCarouselAventura/uncharted4.webp";
+import redemption2 from "../../../assets/img/imgCarouselAventura/redemption2.jpg";
 import { Row } from "react-bootstrap";
-import CardJuegos from "../Juegos/CardJuegos";
+import CardJuegos from "../juegos/CardJuegos";
 
 const Aventura = ({ juegos }) => {
   const juegosAventura = juegos.filter((juego) => juego.categoria === "Aventura");

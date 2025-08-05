@@ -1,9 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
-import minecraft from "../../img/imgCarouselSandbox/minecraft.webp";
-import garrysMod from "../../img/imgCarouselSandbox/garrysMod.jpg";
-import terraria from "../../img/imgCarouselSandbox/terraria.jpg";
+import minecraft from "../../../assets/img/imgCarouselSandbox/minecraft.webp";
+import garrysMod from "../../../assets/img/imgCarouselSandbox/minecraft.webp";
+import terraria from "../../../assets/img/imgCarouselSandbox/terraria.jpg";
 import { Row } from "react-bootstrap";
-import CardJuegos from "../Juegos/CardJuegos";
+import CardJuegos from "../juegos/CardJuegos";
 
 const Sandbox = ({ juegos }) => {
   const juegosSandoBox = juegos.filter((juegos) => juegos.categoria === "SandBox");
