@@ -1,68 +1,299 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+#root {
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  flex-direction: column;
   min-height: 100vh;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+main {
+  flex-grow: 1;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/*Fuentes */
+.orbitron {
+  font-family: "Orbitron", sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.bebasneue {
+  font-family: "Bebas Neue", sans-serif;
+}
+/*fin fuentes */
+
+.sombraNavbarFooter {
+  box-shadow: 0 0px 50px 10px rgba(128, 0, 255, 0.4);
+}
+
+.sombraADMIN {
+  color: rgb(255, 0, 64); /* rojo fuerte */
+  text-shadow: 0 0 3px rgba(128, 0, 255, 0.4), 0 0 6px rgba(128, 0, 255, 0.6), 0 0 12px rgba(128, 0, 255, 0.8),
+    0 0 20px rgba(128, 0, 255, 1);
+}
+
+.fondoLogin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(128, 0, 255, 0.4), #1465f0, #00ffff);
+}
+
+.fondoContenedorDerechoLogin {
+  background: linear-gradient(135deg, #1465f0, #8fb9f3);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fondoContenedorIzquierdoLogin {
+  background: rgb(12, 19, 50);
+}
+
+/* Inicio SobreNosotros */
+.teamCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tecnologiasQueDominamos {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.titleTecnologia {
+  font-size: 1.75rem;
+}
+.techItem {
+  animation: float 3s ease-in-out infinite;
+}
+/* Fin SobreNosotros */
+
+@media (max-width: 767px) {
+  .fondoContenedorDerechoLogin {
+    min-height: 40vh;
   }
-  a:hover {
-    color: #747bff;
+}
+
+.banner {
+  height: 480px;
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.banner:hover {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+.img-cover {
+  height: 300px;
+  object-fit: cover;
+}
+
+.custom-card {
+  height: 100%;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background: linear-gradient(90deg, #28a745, #9b00ff) !important; /* verde a morado */
+  color: rgb(251, 255, 0) !important;
+  box-shadow: 0 0 8px 2px #9b00ff; /* resplandor morado */
+}
+
+.alturaImg {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.object-position-top {
+  object-position: top;
+}
+
+.sombraTituloShooter {
+  text-shadow: 0 0 10px rgb(255, 255, 255), 2px 2px 25px rgba(255, 0, 0, 0.8), 0 0 50px rgba(255, 0, 0, 0.6),
+    0 0 75px rgba(128, 0, 255, 0.4);
+}
+
+.sombraTituloSimulacion {
+  text-shadow: 0 0 10px rgb(0, 255, 0), 2px 2px 25px rgba(255, 251, 0, 0.8), 0 0 50px rgba(251, 255, 0, 0.6),
+    0 0 75px rgba(30, 255, 0, 0.4);
+}
+
+.sombraTituloAventura {
+  text-shadow: 0 0 10px rgb(17, 0, 255), 2px 2px 25px rgba(0, 255, 34, 0.8), 0 0 50px rgb(255, 255, 255),
+    0 0 75px rgb(255, 0, 0);
+}
+
+.sombraTituloSandbox {
+  text-shadow: 0 0 10px rgb(255, 0, 212), 2px 2px 25px rgb(255, 217, 1), 0 0 50px rgb(251, 255, 0),
+    0 0 75px rgb(255, 0, 0);
+}
+
+.sombraTituloRpg {
+  text-shadow: 0 0 10px rgb(255, 0, 0), 2px 2px 25px rgb(76, 0, 255), 0 0 50px rgb(0, 255, 34),
+    0 0 75px rgb(255, 255, 255);
+}
+
+.letras-espaciadas {
+  letter-spacing: 0.1em;
+}
+
+.sombraSection {
+  box-shadow: 0 0 30px 15px rgb(255, 255, 255);
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 0.85rem;
+    padding: 0.5rem !important;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .carousel-caption h3 {
+    font-size: 1rem;
   }
+}
+@media (min-width: 576px) {
+  .alturaImg {
+    height: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .alturaImg {
+    height: 450px;
+  }
+}
+
+@media (min-width: 992px) {
+  .alturaImg {
+    height: 550px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .alturaImg {
+    height: 750px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.imgDetalle {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.cardsDetalle {
+  border-radius: 10px;
+  box-shadow: 0 0px 20px 10px rgba(128, 0, 255, 0.4);
+   overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.bordeDetalle {
+  border-top: 5px solid rgba(0, 0, 0, 0.555);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.486);
+}
+
+.img-admin {
+  width: 100px;
+  height: 50px;
+}
+.tamaño {
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-hover {
+  transition: transform 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(203, 8, 8, 0.3);
+}
+
+.titulo-categoria {
+  text-shadow: 4px 4px 4px rgba(214, 142, 142, 0.628);
+}
+
+.maintenance-container {
+  min-height: 70vh;
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.maintenance-title {
+  font-size: 2rem;
+  color: #00fff7;
+  text-shadow: 0 0 5px #00fff7, 0 0 15px #00fff7;
+  margin-bottom: 1.5rem;
+}
+
+.maintenance-text {
+  max-width: 700px;
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Responsive title */
+@media (min-width: 768px) {
+  .maintenance-title {
+    font-size: 2.5rem;
+  }
+
+  .maintenance-text {
+    font-size: 1.1rem;
+  }
+}
+
+.gamerzone-brand {
+  color: #ff2e63;
+  font-weight: bold;
+}
+
+.btn-return {
+  margin-top: 1rem;
+  background-color: #ff2e63;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #ff2e63, 0 0 20px #ff2e63;
+}
+
+.btn-return:hover {
+  background-color: #ff1744;
+  box-shadow: 0 0 15px #ff1744, 0 0 25px #ff1744;
+  transform: scale(1.05);
 }
