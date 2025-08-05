@@ -20,7 +20,7 @@ import PreguntasFrecuentes from "./components/pages/Answers";
 import SobreNosotros from "./components/pages/About";
 import { v4 as uuidv4 } from "uuid";
 import BotonComprar from "./components/pages/ButtonBuy";
-import Registro from "./components/pages/Register";
+import Register from "./components/pages/Register";
 
 function App() {
   const usuarioLogueado = JSON.parse(localStorage.getItem("userKeyJuego")) || false;
@@ -105,7 +105,7 @@ function App() {
                 <Login setUsuarioAdmin={setUsuarioAdmin} setNombreUsuario={setNombreUsuario} cuentas={cuentas}></Login>
               }
             ></Route>
-            <Route path="/registro" element={<Registro registrarCuenta={registrarCuenta}></Registro>}></Route>
+            <Route path="/registro" element={<Register registrarCuenta={registrarCuenta}></Register>}></Route>
             <Route path="/shooter" element={<Shooter juegos={juegos}></Shooter>}></Route>
             <Route path="/simulacion" element={<Simulacion juegos={juegos}></Simulacion>}></Route>
             <Route path="/aventura" element={<Aventura juegos={juegos}></Aventura>}></Route>
