@@ -22,6 +22,10 @@ import { v4 as uuidv4 } from "uuid";
 import BotonComprar from "./components/pages/ButtonBuy";
 import Register from "./components/pages/Register";
 
+// Importación de estilos y componentes necesarios
+// Este archivo es el punto de entrada de la aplicación React
+// Aquí se configuran las rutas y el estado global de la aplicación
+
 function App() {
   const usuarioLogueado = JSON.parse(localStorage.getItem("userKeyJuego")) || false;
   const juegosLocalstorage = JSON.parse(localStorage.getItem("listaJuegos")) || [];
