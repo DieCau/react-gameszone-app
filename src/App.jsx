@@ -135,11 +135,11 @@ function App() {
               <Route
                 path="editar/:id"
                 element={
-                  <FormularioJuego
+                  <FormJuegos
                     titulo={"Editar juego"}
                     buscarJuego={buscarJuego}
                     editarJuego={editarJuego}
-                  ></FormularioJuego>
+                  ></FormJuegos>
                 }
               ></Route>
             </Route>
