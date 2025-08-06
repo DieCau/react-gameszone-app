@@ -3,8 +3,12 @@ import img1 from "../../assets/Banner/image1.jpeg";
 import img2 from "../../assets/Banner/topjuegos.jpg";
 import { Container, Row, Carousel } from "react-bootstrap";
 import CardJuegos from "./juegos/CardJuegos";
-const Home = ({ juegos }) => {
 
+// Componente Home muestra la página principal con un carrusel de imágenes
+// Incluye una sección de juegos destacados organizados por categorías
+// Utiliza Bootstrap para el diseño responsivo y estilizado 
+
+const Home = ({ juegos }) => {
   const categorias = ["Shooter", "RPG", "SandBox", "Aventura", "Simulacion"];
   return (
     <section className="mainSection">
