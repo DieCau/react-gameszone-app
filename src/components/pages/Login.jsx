@@ -3,6 +3,10 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 import { useState } from "react";
 
+// Componente Login permite a los usuarios iniciar sesión en la aplicación
+// Utiliza react-hook-form para la validación de formularios
+// Incluye validaciones para email y contraseña
+
 const Login = ({ setUsuarioAdmin, setNombreUsuario, cuentas }) => {
   const {
     register,
