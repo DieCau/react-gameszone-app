@@ -2,8 +2,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router";
 import Card from 'react-bootstrap/Card';
-import ItemJuegos from "./juegos/ItemJuegos";
 
+// Componente DetailProduct muestra los detalles de un juego específico
+// Utiliza el ID del juego para buscar su información
+// Permite a los usuarios ver la descripción, requisitos del sistema y reseñas
+// Incluye botones para agregar el juego al carrito y votar con likes o dislikes
 
 const DetailProduct = ({ buscarJuego }) => {
   const { id } = useParams();
