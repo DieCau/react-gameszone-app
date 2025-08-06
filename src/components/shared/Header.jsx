@@ -3,6 +3,13 @@ import { NavLink, useNavigate } from "react-router";
 import { useState } from "react";
 import Swal from "sweetalert2";
 
+// Componente Header muestra la barra de navegación principal
+// Incluye enlaces a inicio, categorías, administración y opciones de usuario
+// Utiliza Bootstrap para el diseño responsivo y estilos
+// Permite a los usuarios iniciar sesión, registrarse o cerrar sesión
+// Muestra opciones diferentes según si el usuario es administrador o no
+// Utiliza SweetAlert2 para confirmación de cierre de sesión
+
 const Header = ({ usuarioAdmin, setUsuarioAdmin, setNombreUsuario, nombreUsuario }) => {
   const navegacion = useNavigate();
   const [expanded, setExpanded] = useState(false);
