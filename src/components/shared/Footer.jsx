@@ -1,4 +1,8 @@
 import { Link } from "react-router";
+
+// Componente Footer muestra enlaces de navegación y redes sociales
+// Incluye enlaces a juegos, categorías, soporte y quiénes somos
+// Utiliza Bootstrap para el diseño responsivo y estilos
 const Footer = () => {
   return (
     <footer className="py-3 sombraNavbarFooter">
