@@ -2,6 +2,10 @@ import { Form, Button, Container, Row, Col, Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
+// Componente Register permite a los usuarios registrarse en la aplicación
+// Utiliza react-hook-form para la validación de formularios
+// Incluye validaciones para nombre, email y contraseña
+
 const Register = ({ registrarCuenta }) => {
   const {
     register,
