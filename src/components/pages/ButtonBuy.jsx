@@ -1,5 +1,10 @@
 import { Link } from "react-router";
 
+// Componente ButtonBuy muestra un mensaje de mantenimiento
+// Informa a los usuarios que el servicio de compra está temporalmente inactivo
+// Explica que se están realizando actualizaciones en los sistemas de pago y beneficios de afiliación
+// Incluye un enlace para regresar al inicio de la aplicación
+
 const ButtonBuy = () => {
   return (
     <section className="container my-5 maintenance-container text-center">
