@@ -2,6 +2,10 @@ import error from "../../assets/imgError404/error404img.png";
 import { Link } from "react-router";
 import { Container, Row, Col } from "react-bootstrap";
 
+// Componente Error404 muestra un mensaje de error cuando la página no se encuentra
+// Incluye una imagen representativa y un botón para volver al inicio
+// Utiliza Bootstrap para el diseño responsivo y estilizado
+
 const Error404 = () => {
   return (
     <Container className="py-5">
