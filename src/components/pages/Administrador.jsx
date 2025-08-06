@@ -2,6 +2,16 @@ import { Table, Container, Button, Form, Row, Col } from "react-bootstrap";
 import ItemJuegos from "./juegos/ItemJuegos";
 import { Link } from "react-router";
 import { juegosTest } from "../../data/juegosTest";
+
+
+// Componente Administrador permite gestionar los juegos disponibles en la aplicación
+// Permite buscar, agregar y eliminar juegos de la lista
+// Utiliza un estado para manejar la lista de juegos y las búsquedas realizadas por el usuario
+// Recibe props para establecer los juegos, borrar un juego específico, manejar la búsqueda y cambios
+// Muestra una tabla con los juegos disponibles, permitiendo al usuario interactuar con ellos
+// Incluye un botón para cargar juegos de prueba y un enlace para crear un nuevo juego
+
+
 const Administrador = ({ setJuegos, borrarJuego, busqueda, handleChange, juegosFiltados }) => {
   const cargarJuegos = () => {
     setJuegos(juegosTest);
