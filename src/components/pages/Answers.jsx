@@ -1,7 +1,13 @@
 import { Link } from "react-router";
 import Accordion from "react-bootstrap/Accordion";
 
-    const Answers = () => {
+// Componente Answers muestra preguntas frecuentes sobre los juegos y la cuenta
+// Incluye preguntas sobre requisitos de juegos, disponibilidad de juegos gratuitos, conexión a internet,
+// inicio de sesión, vinculación de cuentas y soporte técnico
+// Utiliza un acordeón para organizar las preguntas y respuestas
+// Permite a los usuarios encontrar respuestas a sus dudas de manera rápida y sencilla
+
+const Answers = () => {
   return (
     <div className="d-flex  bg-dark pb-5 mt-5 container ">
       <div className="row justify-content-center">
