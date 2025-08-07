@@ -1,5 +1,10 @@
 import { Col, Card } from "react-bootstrap";
 import { Link } from "react-router";
+
+// Componente CardJuegos que muestra la información de un juego
+// Recibe un objeto juegos con propiedades como imagen, nombreJuego, precio, categoria, plataforma
+// y descripcion, y renderiza una tarjeta con estos datos.
+
 const CardJuegos = ({ juegos }) => {
   return (
     <>
