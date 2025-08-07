@@ -12,6 +12,7 @@ import avatar4 from "../../assets/img/imgSobreNosotros/avatar4.png";
 import avatar5 from "../../assets/img/imgSobreNosotros/avatar5.png";
 
 // Componente About muestra información sobre el equipo y las tecnologías utilizadas
+// Importar los logos de las tecnologías y los avatares del equipo
 
 const About = () => {
   return (
