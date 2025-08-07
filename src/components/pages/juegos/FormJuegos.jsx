@@ -4,7 +4,9 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from "react-router";
 import Swal from "sweetalert2";
 
-
+// Componente FormJuegos que permite crear o editar un juego
+// Recibe funciones crearJuego, buscarJuego, titulo y editarJuego para manejar el formulario
+// Utiliza react-hook-form para la gestión del formulario y validaciones
 const FormJuegos = ({ crearJuego, buscarJuego, titulo, editarJuego }) => {
   const {
     register,
