@@ -5,6 +5,9 @@ import planetZoo from "../../../assets/img/imgCarouselSimulacion/planetZoo.jpg";
 import CardJuegos from "../juegos/CardJuegos";
 import { Row } from "react-bootstrap";
 
+// Este componente muestra una sección de juegos de simulación con un carrusel y una lista de juegos filtrados por la categoría "Simulación".
+// Importa los componentes necesarios y las imágenes para el carrusel.
+// Utiliza Bootstrap para el diseño y la presentación de los juegos.
 const Simulacion = ({ juegos }) => {
   const juegosSimulacion = juegos.filter((juego) => juego.categoria === "Simulacion");
   return (
