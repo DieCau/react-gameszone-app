@@ -5,6 +5,13 @@ import blackOps2 from "../../../assets/img/imgCarouselShooter/blackOps2.jpg";
 import CardJuegos from "../juegos/CardJuegos";
 import { Row } from "react-bootstrap";
 
+// Componente Shooter que muestra juegos de la categoría Shooter
+// Recibe una lista de juegos como prop y filtra aquellos que pertenecen a la categoría "Shooter"
+// Utiliza un carrusel para mostrar imágenes destacadas de juegos populares de esta categoría
+// Muestra una lista de juegos filtrados con sus detalles y precios
+// Importa imágenes de juegos populares como Counter-Strike 2, Battlefield 1: Apocalypse
+// y Call of Duty: Black Ops 6 Warzone
+
 const Shooter = ({ juegos }) => {
   const juegosShooter = juegos.filter((juego) => juego.categoria === "Shooter");
   return (
