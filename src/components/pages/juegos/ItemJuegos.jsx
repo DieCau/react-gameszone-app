@@ -2,6 +2,12 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router";
 import Swal from "sweetalert2";
 
+// Componente ItemJuegos que representa un juego en la lista de juegos
+// Recibe las propiedades fila, juego y borrarJuego
+// fila: número de fila en la tabla
+// juego: objeto que contiene los detalles del juego
+// borrarJuego: función para eliminar el juego
+
 const ItemJuegos = ({ fila, juego, borrarJuego }) => {
   const eliminarJuego = () => {
     Swal.fire({
