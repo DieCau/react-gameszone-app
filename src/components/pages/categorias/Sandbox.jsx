@@ -5,6 +5,11 @@ import terraria from "../../../assets/img/imgCarouselSandbox/terraria.jpg";
 import { Row } from "react-bootstrap";
 import CardJuegos from "../juegos/CardJuegos";
 
+// Componente Sandbox que muestra juegos de la categoría SandBox
+// Recibe una lista de juegos como prop y filtra aquellos que pertenecen a la categoría "SandBox"
+// Utiliza un carrusel para mostrar imágenes destacadas de juegos populares de esta categoría
+// Muestra una lista de juegos filtrados con sus detalles y precios
+// Importa imágenes de juegos populares como Minecraft, Garry's Mod y Terraria
 const Sandbox = ({ juegos }) => {
   const juegosSandoBox = juegos.filter((juegos) => juegos.categoria === "SandBox");
   return (

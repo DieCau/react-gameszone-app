@@ -1,3 +1,5 @@
+// Juegos de ejemplo para la categoría Aventura, RPG, SandBox y Shooter, y sus reseñas
+
 export const juegosTest = [
   {
     id: "Av001",
