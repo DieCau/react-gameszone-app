@@ -5,6 +5,9 @@ import divinity2 from "../../../assets/img/imgCarouselRpg/divinity2.jpg";
 import { Row } from "react-bootstrap";
 import CardJuegos from "../juegos/CardJuegos";
 
+// Importar los componentes necesarios de React Bootstrap y las imágenes para el carrusel
+// Importar el componente CardJuegos para mostrar los juegos de la categoría RPG
+
 const Rpg = ({ juegos }) => {
   const juegosRPG = juegos.filter((juego) => juego.categoria === "RPG");
   return (

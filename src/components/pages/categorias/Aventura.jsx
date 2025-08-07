@@ -5,6 +5,9 @@ import redemption2 from "../../../assets/img/imgCarouselAventura/redemption2.jpg
 import { Row } from "react-bootstrap";
 import CardJuegos from "../juegos/CardJuegos";
 
+// Importar los componentes necesarios de React Bootstrap y las imágenes para el carrusel
+// Importar el componente CardJuegos para mostrar los juegos de la categoría Aventura
+
 const Aventura = ({ juegos }) => {
   const juegosAventura = juegos.filter((juego) => juego.categoria === "Aventura");
   return (
